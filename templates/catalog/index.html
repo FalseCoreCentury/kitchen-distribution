@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+<link href="{% static 'style.css' %}" rel="stylesheet">
+
+{% block title %}Welcome to Kitchen Distribution System{% endblock %}
+
+{% block content %}
+  <style>
+    .card {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+  </style>
+<br>
+<h1>You're welcome</h1>
+  <p class="lead">System that helps you manage your time.</p>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://www.willflyforfood.net/wp-content/uploads/2022/10/balinese-food-nasi-campur-bali.jpg" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">Dishes</h5>
+                    <p class="card-text">Watch, create, update!</p>
+                    <a href="{% url 'catalog:dish' %}" class="btn btn-primary">Dishes list</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.9g7COb0DK1iYuATMDJGcZgHaEn?rs=1&pid=ImgDetMain" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">Cooks</h5>
+                    <p class="card-text">Add your chef to the database</p>
+                    <a href="{% url 'catalog:cook' %}" class="btn btn-primary">Cooks list</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.55544055f1c5b8677db8094bf5831e45?rik=bzvEORg6ceP2lg&pid=ImgRaw&r=0" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">Dishes Type</h5>
+                    <p class="card-text">Create your own type!</p>
+                    <a href="{% url 'catalog:dish-type' %}" class="btn btn-primary">Dishes Type List</a>
+                </div>
+            </div>
+        </div>
+      <div class="text-center mt-3">
+                <a class="btn btn-outline-dark" href="{% url 'accounts:logout' %}">Logout</a>
+            </div>
+    </div>
+</div>
+{% endblock %}
