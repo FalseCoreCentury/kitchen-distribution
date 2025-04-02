@@ -15,14 +15,12 @@ class Cook(AbstractUser):
     last_name = models.CharField(max_length=255)
 
     groups = models.ManyToManyField(
-        "auth.Group",
-        related_name="cook_set",  # Unique related name
-        blank=True
+        "auth.Group", related_name="cook_set", blank=True  # Unique related name
     )
     user_permissions = models.ManyToManyField(
         "auth.Permission",
         related_name="cook_permissions_set",  # Unique related name
-        blank=True
+        blank=True,
     )
 
     def __str__(self):
