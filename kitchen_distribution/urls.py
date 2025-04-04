@@ -6,7 +6,7 @@ import catalog
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("catalog/", include("catalog.urls", namespace="catalog")),
+    path("", include("catalog.urls", namespace="catalog")),
     path("accounts/", include("accounts.urls", namespace="accounts")),
     path("", catalog.views.index, name="index"),
 ]

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - Kitchen Distribution System{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="d-flex justify-content-center align-items-center" style="height: 80vh;">
+    <div class="col-md-4">
+        <div class="card shadow p-4">
+            <h3 class="text-center mb-4">Login</h3>
+            {% if error %}
+              <p style="color: red">{{ error }}</p>
+            {% endif %}
+            <form action="{% url 'accounts:login' %}" method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" name="username" class="form-control" placeholder="Enter your username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <a href="{% url 'accounts:logout' %}">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
