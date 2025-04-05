@@ -1,0 +1,159 @@
+[
+{
+    "model": "catalog.dishtype",
+    "pk": 1,
+    "fields": {
+        "name": "Pasta"
+    }
+},
+{
+    "model": "catalog.dishtype",
+    "pk": 7,
+    "fields": {
+        "name": "Soup"
+    }
+},
+{
+    "model": "catalog.dishtype",
+    "pk": 8,
+    "fields": {
+        "name": "Salad"
+    }
+},
+{
+    "model": "catalog.dishtype",
+    "pk": 9,
+    "fields": {
+        "name": "Seafood"
+    }
+},
+{
+    "model": "catalog.dishtype",
+    "pk": 10,
+    "fields": {
+        "name": "Fastfood"
+    }
+},
+{
+    "model": "catalog.dishtype",
+    "pk": 11,
+    "fields": {
+        "name": "Dessert"
+    }
+},
+{
+    "model": "catalog.cook",
+    "pk": 1,
+    "fields": {
+        "last_login": null,
+        "is_superuser": true,
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-03-12T16:20:35Z",
+        "years_of_experience": 3,
+        "username": "admin",
+        "email": "simonov0101k@gmail.com",
+        "password": "qwerty1234",
+        "first_name": "Valentin",
+        "last_name": "Simonov",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "catalog.cook",
+    "pk": 3,
+    "fields": {
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-24T19:16:22.049Z",
+        "years_of_experience": 1,
+        "username": "testuser_2",
+        "email": "example3@gmail.com",
+        "password": "testpassword_2",
+        "first_name": "Alan",
+        "last_name": "Wake",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "catalog.cook",
+    "pk": 4,
+    "fields": {
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-24T19:16:52.315Z",
+        "years_of_experience": 8,
+        "username": "testuser_3",
+        "email": "example4@gmail.com",
+        "password": "password_3",
+        "first_name": "Richard",
+        "last_name": "Gear",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "catalog.cook",
+    "pk": 5,
+    "fields": {
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-24T19:17:35.586Z",
+        "years_of_experience": 5,
+        "username": "test_user5",
+        "email": "example5@gmail.com",
+        "password": "password_5",
+        "first_name": "Liam",
+        "last_name": "Chemsword",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "catalog.dish",
+    "pk": 1,
+    "fields": {
+        "name": "Spaghetti Carbonara",
+        "description": "Classic Italian pasta with eggs, cheese, and pancetta.",
+        "price": "12.99",
+        "dish_type": 11,
+        "cooks": [
+            5
+        ]
+    }
+},
+{
+    "model": "catalog.dish",
+    "pk": 2,
+    "fields": {
+        "name": "Bigos",
+        "description": "Dish num 1",
+        "price": "12.00",
+        "dish_type": 1,
+        "cooks": [
+            1
+        ]
+    }
+},
+{
+    "model": "catalog.dish",
+    "pk": 4,
+    "fields": {
+        "name": "1",
+        "description": "1",
+        "price": "1.00",
+        "dish_type": 1,
+        "cooks": [
+            1
+        ]
+    }
+}
+]
