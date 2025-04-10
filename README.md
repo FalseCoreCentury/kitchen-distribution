@@ -1,5 +1,8 @@
 # Django Site
 
+login: rootv4
+password: rootv4/q
+
 A web application built with [Django](https://www.djangoproject.com/), a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
 
 ## 🚀 Features
