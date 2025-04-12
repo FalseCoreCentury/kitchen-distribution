@@ -30,6 +30,11 @@ python manage.py runserver
 - pip (Python package installer)
 - Virtualenv (recommended)
 
+## 💻 Demo
+
+You can check out the live demo of the project here:  
+**[Project Demo](https://kitchen-distribution-1.onrender.com)**
+
 ## 🛠️ Installation
 
 1. **Clone the repository:**
