@@ -60,7 +60,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "kitchen_distribution.wsgi.application"
+WSGI_APPLICATION = "config.wsgi.application"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -153,3 +153,5 @@ DATABASES = {
         "PORT": int(os.environ["POSTGRES_DB_PORT"]),
     }
 }
+
+
